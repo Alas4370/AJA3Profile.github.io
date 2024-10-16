@@ -145,7 +145,7 @@ window.addEventListener('scroll', () => {
 // **************** Download PDF Resume ****************
 function downloadPDF() {
     const link = document.createElement('a');
-    link.href = 'https://alas4370.github.io/AJA3.github.io/assets/pdf/AJA_Resume.pdf'; // Replace with the actual path to your PDF file
+    link.href = 'https://alas4370.github.io/AJA3Profile.github.io/assets/pdf/AJA_Resume.pdf'; // Replace with the actual path to your PDF file
     link.download = 'AJA_Resume.pdf'; // Replace with the desired file name for download
     link.click();
 }
@@ -171,7 +171,7 @@ document.getElementById("email-address").addEventListener("click", function() {
         });
 });
 
-// **************** light or Dark mode Switch ****************
+// **************** Light or Dark mode Switch ****************
 document.getElementById('darkModeToggle').addEventListener('change', function() {
     document.body.classList.toggle('dark-mode');
     document.section.classList.toggle('dark-mode');
