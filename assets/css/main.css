@@ -11,7 +11,7 @@ body {
 }
 
 body section {
-    margin: 50px 200px !important;
+    margin: 50px 200px;
     padding: 60px 40px; /* Padding to give space around the section */
     background: #e0e0e0; /* Background color */
     box-shadow: 5px 5px 15px #bebebe, -5px -5px 15px #ffffff; /* Neumorphism shadow */
@@ -66,7 +66,7 @@ nav .left {
     align-items: center;
     justify-content: center;
     margin-block-start: 0%;
-    margin-block-end: 0% !important;
+    margin-block-end: 0%;
 }
 
 nav .navigation {
@@ -211,7 +211,7 @@ h1 {
 
 .progress-value {
     position: absolute;
-    font-size: 14px !important;
+    font-size: 14px;
     font-weight: bold;
     top: 75%; /* Center the value */
     left: 50%;
@@ -333,7 +333,7 @@ h2 {
 
 .contact-item h3 {
     margin-block-start: 0%;
-    margin-block-end: 0% !important;
+    margin-block-end: 0% ;
 }
 
 iframe {
@@ -532,8 +532,132 @@ body.dark-mode .contact-item p {
 }
 
 /* Footer styles */
-footer {
+body.dark-mode footer {
     background-color: #1e1e1e; /* Dark footer background */
     color: #ffffff; /* Light footer text color */
     border-top: 1px solid #444; /* Darker top border for separation */
+}
+
+
+/* ******* MEDIA QUERIES ******* */
+@media (max-width: 768px) {
+    body {
+        margin: 0; /* Ensure there's no default margin */
+    }
+
+    header {
+        padding: 5px 10px; /* Less padding for mobile */
+    }
+
+    nav {
+        display: block;
+        flex-direction: row; /* Stack nav items vertically */
+        padding: 10px; /* Add some padding */
+    }
+    
+    nav .left {
+        padding-bottom: 10px;
+    }
+
+    nav .navigation {
+        padding-bottom: 10px;
+        margin: 0%;
+    }
+
+    nav ul.social-media {
+        justify-content: center;
+        align-items: center;
+        flex-direction: row; /* Vertical layout for nav items */
+        gap: 10px; /* Reduced gap for mobile */
+    }
+
+    .section-title {
+        font-size: 1.8rem; /* Smaller title size */
+    }
+
+    body section {
+        margin: 20px 10px !important; /* Reduced margin for mobile */
+        padding: 20px; /* Adjust padding */
+        box-shadow: 3px 3px 10px #bebebe, -3px -3px 10px #ffffff; /* Adjust shadow for mobile */
+    }
+
+    h1 {
+        font-size: 2rem; /* Smaller heading */
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Smaller subheading */
+    }
+
+    .about-content-info{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-half, .skills-half-bottom {
+        width: 100%; /* Full width for mobile */
+        margin: 10px 0; /* Margin between sections */
+    }
+
+    .about-half li a {
+        font-size: 12px;
+    }
+
+    .about-half img {
+        max-width: 90%; /* Make image responsive */
+    }
+
+    .skills-half-top {
+        margin: 0%;
+        width: auto;
+    }
+
+    .circular-progress {
+        width: 50px; /* Smaller circular progress */
+        height: 50px; /* Keep it circular */
+    }
+
+    .circular-progress svg {
+        height: auto;
+    }
+
+    .progress-value, .skill {
+        font-size: 12px; /* Smaller font size for percentages */
+    }
+
+    .resume-category, .resume-item {
+        padding: 15px; /* Less padding for items */
+    }
+
+    .resume-job-desc span {
+        padding: 2px 5px;
+        font-size: 14px;
+    }
+
+    .download-pdf {
+        margin-top: 15px; /* Less margin */
+    }
+
+    .btn {
+        padding: 8px 15px; /* Smaller button size */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .contact-wrap {
+        gap: 10px; /* Reduced gap */
+    }
+
+    .contact-item {
+        flex-direction: column; /* Stack items */
+        align-items: flex-start; /* Align to start */
+    }
+
+    iframe {
+        height: 200px; /* Adjust height for mobile */
+    }
+
+    footer {
+        padding: 15px; /* Less padding for footer */
+        font-size: 14px; /* Adjust font size */
+    }
 }
