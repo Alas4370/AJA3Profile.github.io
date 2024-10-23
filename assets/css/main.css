@@ -177,6 +177,18 @@ h1 {
     flex-wrap: wrap; /* Allow wrapping if needed */
 }
 
+.skill-category {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skill-category h5 {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: 15px;
+}
+
 .skills-half-top, .skills-half-bottom {
     display: flex;
     flex-direction: row;
@@ -190,7 +202,7 @@ h1 {
     position: relative;
     width: 150px; /* Adjust size as needed */
     height: 150px;
-    margin: 20px; /* Space between progress bars */
+    margin: 10px 20px 20px 20px; /* Space between progress bars */
     border-radius: 50%; /* Make it circular */
     background: rgba(0, 0, 0, 0.1); /* Light background */
     box-shadow: -2px -2px 5px 0px rgb(134 134 134), inset 3px 3px 10px 10px rgb(255 255 255), 
@@ -610,6 +622,10 @@ body.dark-mode footer {
         max-width: 90%; /* Make image responsive */
     }
 
+    .skill-category h5 {
+        font-size: 8px;
+    }
+
     .skills-half-top {
         margin: 0%;
         width: auto;
@@ -624,8 +640,12 @@ body.dark-mode footer {
         height: auto;
     }
 
-    .progress-value, .skill {
-        font-size: 12px; /* Smaller font size for percentages */
+    .progress-value {
+        font-size: 8px; /* Smaller font size for percentages */
+    }
+
+    .skill {
+        font-size: 12px;
     }
 
     .resume-category, .resume-item {
